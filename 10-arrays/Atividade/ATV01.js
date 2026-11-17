@@ -23,4 +23,4 @@ console.log(usuario)
 let aleatorio = Math.floor(Math.random() * usuario.length)
 console.log("Da lista. o aluno sorteado foi:" + usuario[aleatorio])
 
- 
+  
