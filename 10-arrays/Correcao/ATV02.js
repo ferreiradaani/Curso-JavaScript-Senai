@@ -11,18 +11,18 @@ let soma = 0
 let maioridade = 0
 
 for (let i = 1; i <= 10; i++){
-    let idade= Number(prompt("Informe as idades: "))
+    let idade = Number(prompt("Digite a idade: "))
     idades.push(idade)
 }
 let menoridade = idades[0]
 
-for(let i = 0; i < idades.length; i++){
+for(let i = 0; i< idades.length; i++){
     soma += idades[i]
-    if(idades[i]> maioridade){
+    if(idades[i] > maioridade){
         maioridade = idades[i]
     }
-    if(menoridade> idades[i]){
-        menoridade = idade[i]
+    if(menoridade > idades[i]) {
+        menoridade = idades[i]
     }
 }
 media = soma / idades.length
