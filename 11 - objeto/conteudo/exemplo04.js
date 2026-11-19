@@ -1,6 +1,7 @@
 const prompt = require("prompt-sync") ()
 let clientes = []
 
+
 for(let i = 1; i <= 3; i++) {
     let nome = prompt("Digite o nome: ")
     let email = prompt("Digite o email: ")
