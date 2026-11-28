@@ -21,6 +21,7 @@ const produtos = [
 
 const lista = document.querySelector("#lista-produtos")
 const form = document.querySelector("form")
+const busca = document.querySelector("#busca")
 
 // criando uma função
 function mostrarProdutos(produtos) {
@@ -39,6 +40,18 @@ function mostrarProdutos(produtos) {
        ` 
     }
 }
+
+busca.addEventListener("input", function(evento){
+    let valor = evento.target.value
+
+    // usando metodo de filtragem (let filtro = array(function(i){}))
+    let filtrado = produtos.filter(function(produto){
+        return produto.nome.toLowerCase().includes(valor)
+    
+    })
+
+    mostrarProdutos(filtrado)
+})
 
 // chamar o form (Adicionar evento de clique, submit = enviar)
 
